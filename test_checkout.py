@@ -11,7 +11,7 @@ def test_checkout_success(inventory_page, cart_page, checkout_page):
     expect(checkout_page.page).to_have_url(
         "https://www.saucedemo.com/checkout-complete.html"
     )
-    expect(checkout_page.complete_header).to_have_text("Thank you for your order")
+    expect(checkout_page.complete_header).to_have_text("Thank you for your order!")
 
 
 def test_checkout_requires_first_name(inventory_page, cart_page, checkout_page):
